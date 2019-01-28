@@ -35,7 +35,15 @@ void Figure::getBoundingBox()
 		}
 	}
 
+	smallX= ((smallX * 1000) / 1000.0);
+	bigY = ((bigY * 1000) / 1000.0);
+	bigX = ((bigX * 1000) / 1000.0);
+	smallY = ((smallY * 1000) / 1000.0);
+
+
 	cout << "Top-Left coords: (" << smallX << "," << bigY << ") , Bottom-Right coords: (" << bigX << "," << smallY << ")" << endl;
 }
 
 int Figure::nrOfShapes = 0;
+
+

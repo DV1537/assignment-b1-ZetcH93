@@ -105,14 +105,14 @@ ShapePosition Polygon::position()
 		double totalCenterX = 0.0;
 		double totalCenterY = 0.0;
 
-		for (int i = 0; i < (nrOfPoints - 2); i++)
+		for (int i = 0; i < (nrOfPoints); i++)
 		{
-			totalCenterX += (xCord[i] + xCord[i + 1] + xCord[i + 2]) / 3;
-			totalCenterY += (yCord[i] + yCord[i + 1] + yCord[i + 2]) / 3;
+			totalCenterX += xCord[i];
+			totalCenterY += yCord[i];
 		}
 
-		double x = (totalCenterX / nrOfPoints);
-		double y = (totalCenterY / nrOfPoints);
+		double x = (totalCenterX / (nrOfPoints/2));
+		double y = (totalCenterY / (nrOfPoints/2));
 		ShapePosition position(x,y);
 		
 		return position;
