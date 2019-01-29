@@ -105,7 +105,7 @@ ShapePosition Polygon::position()
 		double totalCenterX = 0.0;
 		double totalCenterY = 0.0;
 
-		for (int i = 0; i < (nrOfPoints); i++)
+		for (int i = 0; i < (nrOfPoints/2); i++)
 		{
 			totalCenterX += xCord[i];
 			totalCenterY += yCord[i];
